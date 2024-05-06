@@ -8,9 +8,10 @@ public class Main {
             for (int j = numbers.length - 1; j >= 0; j--) {
                 if (numbers[i] == numbers[j] && i != j) {
                     if (!listNumbers.contains(numbers[i])) {
+                        listNumbers.add(numbers[i]);
                         System.out.println("Element repeat: " + numbers[i]);
                     }
-                    listNumbers.add(numbers[i]);
+
                 }
             }
         }
